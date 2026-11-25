@@ -1,6 +1,6 @@
 # code_repo_B — Orthogonal-layer analysis scripts and frozen outputs
 
-Scripts supporting Sections 2.9/2.10 and 3.9 of the manuscript: two public
+Scripts supporting Sections 2.9/2.10 and 3.8–3.9 of the manuscript: two public
 DKD kidney proteomes (PRIDE PXD041884; iProX IPX0003092000/PXD040617), proximal-tubule
 DNA methylomes (GEO GSE233758 primary, GSE145745 replication), and perturbational
 connectivity (iLINCS/L1000; queried 3 November 2026, saved API responses included for
@@ -19,7 +19,7 @@ outputs. The layers are analyzed as orthogonal evidence, not validation cohorts.
 | map_uniprot2.py | UniProt accession -> gene symbol mapping via UniProt REST | uniprot_mapping.json |
 | lactate_axis_panel.py | 36-node lactate-axis panel flags for the FFPE cohort | TableB1_lactate_axis_panel.csv (S22 panel flags) |
 | acetylome_inventory.py | Acetyl-lysine peptide inventory, both deposited scales, exact Wilcoxon + BH | TableB1_acetylome_inventory.csv (= S23) |
-| pepxml_axis_psms.py | pep.xml rank-1 PSM evidence sweep for candidate/axis nodes | pepxml_axis_psms.json (PSM tier evidence of Sec. 3.9) |
+| pepxml_axis_psms.py | pep.xml rank-1 PSM evidence sweep for candidate/axis nodes | pepxml_axis_psms.json (PSM tier evidence of Sec. 3.8) |
 | iprox_analyze.py | Glomerular iProX matrix analysis: Fisher detection tests, detected-only Mann-Whitney, detection-dominated rule, median-centering sensitivity, global-context set | TableB1_iprox_panel.csv + TableB1_iprox_global_context.csv (= S24) |
 
 ## B4_methylation_GSE233758
