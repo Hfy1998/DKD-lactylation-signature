@@ -423,7 +423,6 @@ p7 <- ggroc(roc_list, linewidth = .65) +
   scale_color_manual(values = cols) + scale_linetype_manual(values = lts) +
   guides(linetype = "none", color = guide_legend(nrow = 3, byrow = TRUE)) +
   theme_bw(base_size = 8) + coord_equal() +
-  ggtitle("PDK2+PDK4 signature ROC across cohorts") +
   labs(color = NULL) +
   theme(legend.position = "bottom", legend.text = element_text(size = 8), plot.title = element_text(size = 10))
 grDevices::png(file.path(fig_dir, "Fig7A_validation_roc_rev.png"),
