@@ -100,7 +100,10 @@ A7 = load("Fig7A_validation_roc_rev.png")
 B7 = load("Fig7B_calibration_GSE142025.png")
 C7 = load("Fig7C_dca_GSE142025.png")
 cdraw = ImageDraw.Draw(C7)
-cdraw.rectangle([0, 0, C7.width, 360], fill=(255, 255, 255))
+# 200 px clears the panel's own title (bottom edge y171) while sparing the
+# signature net-benefit curve (top edge y255) and the panel frame (y221) at
+# the 600 dpi / 174 mm rendering; the earlier 360 px band erased the curve.
+cdraw.rectangle([0, 0, C7.width, 200], fill=(255, 255, 255))
 bdraw = ImageDraw.Draw(B7)
 bdraw.rectangle([0, 0, 160, 160], fill=(255, 255, 255))
 W = A7.width
